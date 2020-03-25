@@ -48,13 +48,12 @@ end
 def run
   puts "Please enter a command:"
   answer = gets.strip
-  if answer == help
+  case answer
+  when "list"
+    list
+  when "play"
+    play
+  when "help"
     help
-  elsif answer == list
-    list(songs)
-  elsif answer == play
-    play(songs)
-  elsif answer == exit
-    exit_jukebox
   end
 end
