@@ -29,8 +29,9 @@ def play(songs)
       match == response
       puts "Playing #{match}"
     end
-
-
+  elsif response.to_i >=1 && response.to_i < songs.length
+    puts "Playing #{songs[response.to_i-1]}"
+    
 
 end
 
