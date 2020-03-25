@@ -24,7 +24,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   response = gets.strip
-  if songs.include? response
+  if songs.include?(response)
     songs.find do |match|
       match == response
       puts "Playing #{response}"
