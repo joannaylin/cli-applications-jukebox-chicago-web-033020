@@ -31,8 +31,6 @@ def play(songs)
     end
   elsif response.to_i >=1 && response.to_i < songs.length
     puts "Playing #{songs[response.to_i-1]}"
-
-
 end
 
 
