@@ -55,5 +55,7 @@ def run
     play
   when "help"
     help
+  when "exit"
+    exit_jukebox
   end
 end
