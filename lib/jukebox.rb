@@ -28,7 +28,6 @@ def play(songs)
   puts "Playing #{songs[response.to_i-1]}"
   elsif songs.include?(response)
   puts "Playing #{songs.find{ |song| song == response}}"
-    end
   else
     "Sorry, invalid response."
   end
