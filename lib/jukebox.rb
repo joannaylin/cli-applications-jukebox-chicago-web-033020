@@ -26,12 +26,12 @@ def play(songs)
   response = gets.strip
   if songs.include? response
     songs.find do |match|
-      match == response 
+      match == response
       puts "Playing #{match}"
     end
-      
 
-  
+
+
 end
 
 
