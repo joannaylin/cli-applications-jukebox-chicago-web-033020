@@ -25,9 +25,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   response = gets.strip
   if songs.include?(response)
-    songs.find do |match|
-      match == response
-      puts "Playing #{response}"
+    songs.find do |song|
+      song == response
+      puts "Playing #{song}"
     end
   elsif response.to_i >=1 && response.to_i < songs.length
     puts "Playing #{songs[response.to_i-1]}"
