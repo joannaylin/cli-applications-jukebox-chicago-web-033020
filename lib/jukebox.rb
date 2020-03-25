@@ -32,7 +32,7 @@ def play(songs)
   elsif response.to_i >=1 && response.to_i < songs.length
     puts "Playing #{songs[response.to_i-1]}"
   else
-    "Sorry, invalid response.""
+    "Sorry, invalid response."
   end
 end
 
