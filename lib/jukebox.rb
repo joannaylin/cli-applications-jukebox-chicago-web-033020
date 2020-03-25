@@ -50,9 +50,9 @@ def run(songs)
   answer = gets.strip
   case answer
   when "list"
-    list
+    list(songs)
   when "play"
-    play
+    play(songs)
   when "help"
     help
   when "exit"
